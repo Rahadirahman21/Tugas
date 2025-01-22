@@ -1,0 +1,57 @@
+#pesan {
+    font-size: 50px;
+    color: #f5d609;
+  }
+#home {
+    position: relative;
+    height: 50vh; /* Membuat section hampir memenuhi satu layar */
+    display: flex;
+    justify-content: center; /* Menyelaraskan konten secara horizontal */
+    align-items: center; /* Menyelaraskan konten secara vertikal */
+  }
+  
+  .image-container img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Gambar di belakang teks */
+  }
+  
+  .text-overlay {
+    position: relative;
+    z-index: 1; /* Teks berada di depan gambar */
+    color: rgb(0, 0, 0); /* Agar teks terlihat jelas di atas gambar */
+    padding: 20px;
+  }
+  #tombol{
+    background-color: #db0007;
+      border-color: #db0007;
+      color: #fff;
+      box-shadow: 0 .75rem 1.5rem -.5rem rgba(219, 0, 7, .3);
+  }
+  #box {
+    border-radius: 2%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #box:hover {
+    transform: perspective(500px) rotateX(1deg) rotateY(1deg);
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  .custom-link {
+    color: #2e2c2c; /* Warna kuning untuk link tertentu */
+  }
+  .custom-link:hover {
+    color: #d48806; /* Warna kuning lebih gelap saat hover */
+  }
+  #kontak {
+    background-color: #fff;
+    position: relative;
+    height: 20vh;
+    justify-content: center; /* Menyelaraskan konten secara horizontal */
+    align-items: center;
+  }
+  
