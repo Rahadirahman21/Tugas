@@ -4,7 +4,7 @@
 }
 #home {
   position: relative;
-  height: 95vh; /* Membuat section hampir memenuhi satu layar */
+  height: 80vh; /* Membuat section hampir memenuhi satu layar */
   display: flex;
   justify-content: center; /* Menyelaraskan konten secara horizontal */
   align-items: center; /* Menyelaraskan konten secara vertikal */
@@ -42,7 +42,6 @@
   border-radius: 2%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 #box:hover {
   transform: perspective(500px) rotateX(1deg) rotateY(1deg);
   box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.5);

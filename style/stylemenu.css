@@ -1,8 +1,10 @@
 #pesan {
     font-size: 50px;
-    color: #f5d609;
+    color: #000000;
+    text-shadow:  2px 2px #fffefe;
   }
 #home {
+  background-color: #fef9ec;
     position: relative;
     height: 50vh; /* Membuat section hampir memenuhi satu layar */
     display: flex;
@@ -13,11 +15,11 @@
   .image-container img {
     position: absolute;
     top: 10px;
-    left: 10px;
-    width: 100%;
+    left: 800px;
+    width: 40%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; /* Gambar di belakang teks */
+    
   }
   
   .text-overlay {
@@ -54,4 +56,13 @@
     justify-content: center; /* Menyelaraskan konten secara horizontal */
     align-items: center;
   }
+
+  #promo{
+    /* position: relative; */
+    height: 80vh; /* Membuat section hampir memenuhi satu layar */
+    /* display: flex;
+    justify-content: center; /* Menyelaraskan konten secara horizontal */
+    /* align-items: center;  */
+  }
+ 
   
