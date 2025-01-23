@@ -84,44 +84,114 @@
       </div>
     </nav>
     <!-- Akhir Navbar  -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../image/promo1.webp" class="d-block w-100" alt="..."id="promo">
+          <img
+            src="../image/promo1.webp"
+            class="d-block w-100"
+            alt="..."
+            id="promo"
+          />
           <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
             <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="../image/promo1.webp" class="d-block w-100" alt="..."id="promo">
+          <img
+            src="../image/promo2.webp"
+            class="d-block w-100"
+            alt="..."
+            id="promo"
+          />
           <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="../image/promo1.webp" class="d-block w-100" alt="..."id="promo">
+          <img
+            src="../image/promo3.webp"
+            class="d-block w-100"
+            alt="..."
+            id="promo"
+          />
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+    <!-- Promo Section -->
+
+    <div class="container">
+      <div class="pilihPromo p-5">
+        <button class="buttonPromo-Active" id="semuaPromo">Semua Promo</button>
+        <button class="buttonPromo" id="promoMingguan">Promo Mingguan</button>
+        <button class="buttonPromo" id="promoBulanan">Promo Bulanan</button>
+        <button class="buttonPromo" id="promoTahunan">Promo Tahun</button>
+      </div>
+    </div>
+
+    <!-- Content Promo -->
+
+    <!-- End Content Promo -->
+    <div class="promoContent" id="">
+
+      <div class="row" id="promoContent"></div>
+      
+    </div>
+      <!--  -->
+    </div>
+    <!-- End Promo Section -->
+
     <!-- Contact  -->
     <section id="kontak">
       <div class="container mt-3 mb-3">
@@ -191,5 +261,195 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const promoContent = document.getElementById("promoContent");
+      const promoMingguan = document.getElementById("promoMingguan");
+      const promoBulanan = document.getElementById("promoBulanan");
+      const promoTahunan = document.getElementById("promoTahunan");
+      const semuaPromo = document.getElementById("semuaPromo");
+      const data = [
+        {
+          namaProduct: "McSpaghetti",
+          gambar: "./../image/promo1.webp",
+          deskripsi: "Yang ....",
+          date: "31 Desember 2025",
+          kategori: "mingguan",
+        },
+        {
+          namaProduct: "Minuman",
+          gambar: "./../image/promo2.webp",
+          date: "31 Desember 2025",
+          deskripsi: "WOWOOOWOW",
+          kategori: "mingguan",
+        },
+        {
+          namaProduct: "Caramel",
+          gambar: "./../image/promo3.webp",
+          date: "31 Desember 2025",
+          deskripsi: "WOWOOOWOW",
+          kategori: "bulanan",
+        },
+        {
+          gambar:
+            "https://d2vuyvo9qdtgo9.cloudfront.net/promos/January2025/VCNct1YJlkj5TFg18ZNu.webp",
+          namaProduct: "Kompetisi",
+          date: "10 Februari 2025",
+          deskripsi: "WOWOWWO",
+          kategori: "tahunan",
+        },
+        {
+          gambar:
+            "https://d2vuyvo9qdtgo9.cloudfront.net/promos/January2025/VCNct1YJlkj5TFg18ZNu.webp",
+          namaProduct: "Kompetisi",
+          date: "10 Februari 2025",
+          deskripsi: "WOWOWWO",
+          kategori: "tahunan",
+        },
+        {
+          gambar:
+            "https://d2vuyvo9qdtgo9.cloudfront.net/promos/January2025/VCNct1YJlkj5TFg18ZNu.webp",
+          namaProduct: "Kompetisi",
+          date: "10 Februari 2025",
+          deskripsi: "WOWOWWO",
+          kategori: "tahunan",
+        },
+      ];
+      promoMingguan.addEventListener("click", (e) => {
+        promoMingguan.classList.replace("buttonPromo", "buttonPromo-Active");
+        semuaPromo.classList.replace("buttonPromo-Active", "buttonPromo");
+        promoBulanan.classList.replace("buttonPromo-Active", "buttonPromo");
+        promoTahunan.classList.replace("buttonPromo-Active", "buttonPromo");
+
+        promoContent.innerHTML = "";
+        data.forEach((e) => {
+          if (e.kategori === "mingguan") {
+            const contentPromo = document.createElement("div");
+            contentPromo.classList.add("col-md-3", "mb-3");
+            contentPromo.innerHTML = `<div  id="box">
+        <div class="card">
+          <img src="${e.gambar}" class="card-img-top" alt="projek1" />
+          <div class="card-body">
+            <h4 class="card-text">${e.namaProduct}</h4>
+            <div>${e.deskripsi}</div>
+            <p class="exp-date">
+              <i class="bi bi-calendar"></i> Berlaku hingga ${e.date}
+            </p>
+          </div>
+        </div>
+      </div>`;
+            promoContent.append(contentPromo);
+          }
+        });
+      });
+
+      promoBulanan.addEventListener("click", (e) => {
+        promoBulanan.classList.replace("buttonPromo", "buttonPromo-Active");
+        semuaPromo.classList.replace("buttonPromo-Active", "buttonPromo");
+        promoMingguan.classList.replace("buttonPromo-Active", "buttonPromo");
+        promoTahunan.classList.replace("buttonPromo-Active", "buttonPromo");
+
+        promoContent.innerHTML = "";
+        data.forEach((e) => {
+          if (e.kategori === "bulanan") {
+            const contentPromo = document.createElement("div");
+            contentPromo.classList.add("col-md-3", "mb-3");
+            contentPromo.innerHTML = `<div  id="box">
+        <div class="card">
+          <img src="${e.gambar}" class="card-img-top" alt="projek1" />
+          <div class="card-body">
+            <h4 class="card-text">${e.namaProduct}</h4>
+            <div>${e.deskripsi}</div>
+            <p class="exp-date">
+              <i class="bi bi-calendar"></i> Berlaku hingga ${e.date}
+            </p>
+          </div>
+        </div>
+      </div>`;
+            promoContent.append(contentPromo);
+          }
+        });
+      });
+      promoTahunan.addEventListener("click", (e) => {
+        promoTahunan.classList.replace("buttonPromo", "buttonPromo-Active");
+        semuaPromo.classList.replace("buttonPromo-Active", "buttonPromo");
+        promoBulanan.classList.replace("buttonPromo-Active", "buttonPromo");
+        promoMingguan.classList.replace("buttonPromo-Active", "buttonPromo");
+
+        promoContent.innerHTML = "";
+        data.forEach((e) => {
+          if (e.kategori === "tahunan") {
+            const contentPromo = document.createElement("div");
+            contentPromo.classList.add("col-md-3", "mb-3");
+            contentPromo.innerHTML = `<div  id="box">
+        <div class="card">
+          <img src="${e.gambar}" class="card-img-top" alt="projek1" />
+          <div class="card-body">
+            <h4 class="card-text">${e.namaProduct}</h4>
+            <div>${e.deskripsi}</div>
+            <p class="exp-date">
+              <i class="bi bi-calendar"></i> Berlaku hingga ${e.date}
+            </p>
+          </div>
+        </div>
+      </div>`;
+            promoContent.append(contentPromo);
+          }
+        });
+      });
+
+      semuaPromo.addEventListener("click", (e) => {
+        promoTahunan.classList.replace("buttonPromo", "buttonPromo-Active");
+        promoBulanan.classList.replace("buttonPromo-Active", "buttonPromo");
+        promoTahunan.classList.replace("buttonPromo-Active", "buttonPromo");
+        promoMingguan.classList.replace("buttonPromo-Active", "buttonPromo");
+
+        semuaPromo.classList.replace("buttonPromo", "buttonPromo-Active");
+
+        promoContent.innerHTML = "";
+        data.forEach((e) => {
+          const contentPromo = document.createElement("div");
+          contentPromo.classList.add("col-md-3", "mb-3");
+          contentPromo.innerHTML = `<div  id="box">
+        <div class="card">
+          <img src="${e.gambar}" class="card-img-top" alt="projek1" />
+          <div class="card-body">
+            <h4 class="card-text">${e.namaProduct}</h4>
+            <div>${e.deskripsi}</div>
+            <p class="exp-date">
+              <i class="bi bi-calendar"></i> Berlaku hingga ${e.date}
+            </p>
+          </div>
+        </div>
+      </div>`;
+          promoContent.append(contentPromo);
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        promoTahunan.classList.replace("buttonPromo", "buttonPromo-Active");
+        promoBulanan.classList.replace("buttonPromo-Active", "buttonPromo");
+        promoTahunan.classList.replace("buttonPromo-Active", "buttonPromo");
+
+        promoContent.innerHTML = "";
+        data.forEach((e) => {
+          const contentPromo = document.createElement("div");
+          contentPromo.classList.add("col-md-3", "mb-3");
+          contentPromo.innerHTML = `<div  id="box">
+        <div class="card">
+          <img src="${e.gambar}" class="card-img-top" alt="projek1" />
+          <div class="card-body">
+            <h4 class="card-text">${e.namaProduct}</h4>
+            <div>${e.deskripsi}</div>
+            <p class="exp-date">
+              <i class="bi bi-calendar"></i> Berlaku hingga ${e.date}
+            </p>
+          </div>
+        </div>
+      </div>`;
+          promoContent.append(contentPromo);
+        });
+      });
+    </script>
   </body>
 </html>

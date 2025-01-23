@@ -41,7 +41,7 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a
-                class="dropdown-toggle text-decoration-none custom-link fw-bold ms-5 "
+                class="dropdown-toggle text-decoration-none custom-link fw-bold ms-5"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -50,9 +50,21 @@
                 Menu
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="menu/menu.html#sarapan-pagi">Sarapan Pagi</a></li>
-                <li><a class="dropdown-item" href="menu/menu.html#cemilan">Cemilan</a></li>
-                <li><a class="dropdown-item" href="menu/menu.html#minuman">Minuman</a></li>
+                <li>
+                  <a class="dropdown-item" href="menu/menu.html#sarapan-pagi"
+                    >Sarapan Pagi</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="menu/menu.html#cemilan"
+                    >Cemilan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="menu/menu.html#minuman"
+                    >Minuman</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -92,15 +104,15 @@
 
     <!-- Promo -->
     <section id="promo" class="bg-body-secondary">
-      <div class="container -fluid ">
+      <div class="container -fluid">
         <div class="row text-center mb-3">
           <div class="col">
-            <h1 class="mt-5 mb-3 fw-bold" >Promo Menarik</h1>
+            <h1 class="mt-5 mb-3 fw-bold">Promo Menarik</h1>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-4 mb-3" id="box">
-            <div class="card">
+          <div class="col-md-4 mb-3" >
+            <div class="card"id="box">
               <img src="image/promo1.webp" class="card-img-top" alt="projek1" />
               <div class="card-body">
                 <h4 class="card-text">McSpaghetti</h4>
@@ -111,8 +123,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3" id="box">
-            <div class="card">
+          <div class="col-md-4 mb-3" >
+            <div class="card" id="box">
               <img src="image/promo2.webp" class="card-img-top" alt="projek1" />
               <div class="card-body">
                 <h4 class="card-text">McSpaghetti</h4>
@@ -123,8 +135,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3" id="box">
-            <div class="card">
+          <div class="col-md-4 mb-3">
+            <div class="card" id="box">
               <img src="image/promo3.webp" class="card-img-top" alt="projek1" />
               <div class="card-body">
                 <h4 class="card-text">McSpaghetti</h4>
@@ -154,17 +166,26 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-2 mb-3" id="box">
-            <a href=""
-              ><img
+          <a
+            class="col-md-2 mb-3 text-black"
+            id="box"
+            style="text-decoration: none"
+            data-bs-toggle="modal"
+            href="#exampleModalToggle"
+          >
+            <div role="button">
+              <img
                 src="image/fav1.webp"
                 class="card-img-top mt-3"
                 alt="projek1"
-            /></a>
-            <div class="card-body">
-              <h4 class="card-text text-center mb-5">Big Mac</h4>
+              />
             </div>
-          </div>
+            <div class="card-body">
+              <h4 class="card-text text-center mb-5 text-decoration-none">
+                Big Mac
+              </h4>
+            </div>
+          </a>
           <div class="col-md-2 mb-3" id="box">
             <a href="">
               <img
@@ -212,10 +233,7 @@
         </div>
       </div>
       <div class="d-flex justify-content-center">
-        <a
-          href="menu/menu.html"
-          class="btn btn-danger mb-5 mt-3"
-          id="tombol"
+        <a href="menu/menu.html" class="btn btn-danger mb-5 mt-3" id="tombol"
           >Lihat Semua Menu</a
         >
       </div>
@@ -274,8 +292,81 @@
     </section>
     <!-- Akhir contact  -->
 
+    <!-- Modal -->
+
+    <div
+      class="modal fade"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Show a second modal and hide this one with the button below.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-primary"
+              data-bs-target="#exampleModalToggle2"
+              data-bs-toggle="modal"
+              data-bs-dismiss="modal"
+            >
+              Open second modal
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Hide this modal and show the first with the button below.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-primary"
+              data-bs-target="#exampleModalToggle"
+              data-bs-toggle="modal"
+              data-bs-dismiss="modal"
+            >
+              Back to first
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Modal -->
+
     <!-- footer  -->
-    <footer class="bg-body-tertiary text-dark text-center pb-3 ">
+    <footer class="bg-body-tertiary text-dark text-center pb-3">
       <p>
         Created with <i class="bi bi-heart-pulse-fill text-danger"></i> by
         <a

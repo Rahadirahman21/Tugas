@@ -64,5 +64,53 @@
     justify-content: center; /* Menyelaraskan konten secara horizontal */
     /* align-items: center;  */
   }
+
  
-  
+  .pilihPromo{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+ 
+  .buttonPromo-Active {
+ border: none;
+ background-color: #ffbc0d;
+ padding: 15px;
+ min-width: 200px;
+ color: white;
+ font-size: 20px;
+ font-weight: 800;
+ box-shadow: 0 5px 15px #e5e5e5;
+  }
+
+  .buttonPromo {
+    border: none;
+    background-color: #f2f2f2;
+    padding: 15px;
+    min-width: 200px;
+    color: #CCCCCC;
+    font-size: 20px;
+    font-weight: 800;
+    box-shadow: 0 5px 15px #e5e5e5;
+   
+  }
+
+  .buttonPromo:hover {
+    border: none;
+    background-color: #ffbc0d;
+    padding: 15px;
+    min-width: 200px;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    box-shadow: 0 5px 15px #e5e5e5;
+     }
+
+     
+     #promoContent{
+      display: flex;
+      justify-content: center;
+      gap :2rem
+     }
+
+     
