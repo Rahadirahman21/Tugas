@@ -112,5 +112,7 @@
       justify-content: center;
       gap :2rem
      }
-
+.card{
+  padding: 20px;
+}
      

@@ -37,11 +37,11 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a
-                class="dropdown-toggle text-decoration-none custom-link fw-bold ms-4"
+                class="dropdown-toggle text-decoration-none custom-link fw-bold ms-5"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -63,7 +63,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active  custom-link">
               <a
                 class="active text-decoration-none custom-link fw-bold ms-4"
                 aria-current="page"
@@ -75,7 +75,7 @@
               <a
                 class="active text-decoration-none custom-link fw-bold ms-4"
                 aria-current="page"
-                href="menu.html"
+                href="../index.html"
                 >Menu Favorit</a
               >
             </li>
@@ -120,8 +120,8 @@
             id="promo"
           />
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5></h5>
+            <p></p>
           </div>
         </div>
         <div class="carousel-item">
@@ -132,8 +132,8 @@
             id="promo"
           />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5></h5>
+            <p></p>
           </div>
         </div>
         <div class="carousel-item">
@@ -144,8 +144,8 @@
             id="promo"
           />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5></h5>
+            <p></p>
           </div>
         </div>
       </div>
@@ -298,27 +298,12 @@
           deskripsi: "WOWOWWO",
           kategori: "tahunan",
         },
-        {
-          gambar:
-            "https://d2vuyvo9qdtgo9.cloudfront.net/promos/January2025/VCNct1YJlkj5TFg18ZNu.webp",
-          namaProduct: "Kompetisi",
-          date: "10 Februari 2025",
-          deskripsi: "WOWOWWO",
-          kategori: "tahunan",
-        },
-        {
-          gambar:
-            "https://d2vuyvo9qdtgo9.cloudfront.net/promos/January2025/VCNct1YJlkj5TFg18ZNu.webp",
-          namaProduct: "Kompetisi",
-          date: "10 Februari 2025",
-          deskripsi: "WOWOWWO",
-          kategori: "tahunan",
-        },
+        
       ];
       promoMingguan.addEventListener("click", (e) => {
-        promoMingguan.classList.replace("buttonPromo", "buttonPromo-Active");
-        semuaPromo.classList.replace("buttonPromo-Active", "buttonPromo");
         promoBulanan.classList.replace("buttonPromo-Active", "buttonPromo");
+        semuaPromo.classList.replace("buttonPromo-Active", "buttonPromo");
+        promoMingguan.classList.replace("buttonPromo", "buttonPromo-Active");
         promoTahunan.classList.replace("buttonPromo-Active", "buttonPromo");
 
         promoContent.innerHTML = "";
